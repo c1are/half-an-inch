@@ -31,6 +31,12 @@ h1{
 	margin-bottom: 0;
 }
 
+@media only screen and (max-width: 550px){
+  h1{
+    font-size: 30px;
+  }
+}
+
 #tagLine{
 	background-color: rgba(255,255,255,0.7);
 	margin: 0 auto; 
@@ -47,12 +53,25 @@ h1{
 	margin: 0 auto;
 }
 
+@media only screen and (max-width: 550px){
+  #pageWrapper{
+    width: 100%;
+  }
+}
+
 #measurement{
 	display: flex;
 	align-items: center;
 	text-align: center;
 	margin: 10 30px;
 	padding: 3px;
+	border: 1px solid black;
+}
+
+@media only screen and (max-width: 550px){
+  #measurement{
+    /*display: block;*/
+  }
 }
 
 #measurement input[type="tel"] {
@@ -165,6 +184,13 @@ h1{
 	margin: 1px;
 }
 
+
+@media only screen and (max-width: 550px){
+  #half2{
+    display: none;
+  }
+}
+
 .half p{
 	font-weight: 700;
 	font-size: 3em;
@@ -192,6 +218,13 @@ span {
 	padding-top: 10px;
 }
 
+@media only screen and (max-width: 550px){
+  #quater2, #quater3, #quater4 {
+    display: none;
+  }
+}
+
+
 .eigth{
 	flex-grow: 1;
 	background-color: #E18473;
@@ -205,6 +238,12 @@ span {
 	margin: 0 ;
 	padding: 0;
 	padding-top: 20px;
+}
+
+@media only screen and (max-width: 550px){
+  #eigth2, #eigth3, #eigth4, #eigth5, #eigth6, #eigth7, #eigth8 {
+    display: none;
+  }
 }
 
 .third{
@@ -223,6 +262,12 @@ span {
 	padding: 0;
 }
 
+@media only screen and (max-width: 550px){
+  #third2, #third3 {
+    display: none;
+  }
+}
+
 .sixth{
 	flex-grow: 1;
 	background-color: #89BC93;
@@ -236,6 +281,12 @@ span {
 	margin: 0;
 	padding: 0;
 	padding-top: 10px;
+}
+
+@media only screen and (max-width: 550px){
+  #sixth2, #sixth3, #sixth4, #sixth5, #sixth6 {
+    display: none;
+  }
 }
 
 

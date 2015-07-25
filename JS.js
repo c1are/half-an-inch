@@ -13,63 +13,28 @@ $(document).ready(function(){
     step: 1,
 
     slide: function(event, ui){  
-
+      var html; 
       var sliderValue = ui.value;
+      var fractionPairs = [[0,0],[1, 16], [1, 8], [3,16],[1,4],[5,16],[3,8],[7,16],[1,2],[9,16],[5,8],[11,16],[2,4],[13,16],[7,8],[15,16]];   
 
-      if (sliderValue === 0){
-       $('#sliderValue').html('');
-
-      } else if (sliderValue === 1){    
-        $('#sliderValue').html('<sup>1</sup>&frasl;<sub>16</sub>'); // 1/16
-
-      } else if (sliderValue === 2){
-        $('#sliderValue').html('<sup>1</sup>&frasl;<sub>8</sub>'); // 1/8
-
-      } else if (sliderValue === 3) {
-        $('#sliderValue').html('<sup>3</sup>&frasl;<sub>16</sub>'); // 3/16
-
-      } else if (sliderValue === 4) {
-        $('#sliderValue').html('<strong><sup>1</sup>&frasl;<sub>4</sub></strong>'); // 1/4
-
-      } else if (sliderValue === 5) {
-        $('#sliderValue').html('<sup>5</sup>&frasl;<sub>16</sub>'); // 5/16
-
-      } else if (sliderValue === 6) {
-        $('#sliderValue').html('<sup>3</sup>&frasl;<sub>8</sub>'); // 3/8
-
-      } else  if (sliderValue === 7) {
-        $('#sliderValue').html('<sup>7</sup>&frasl;<sub>16</sub>'); // 7/16
-
-      } else if (sliderValue === 8) {
-        $('#sliderValue').html('<strong><sup>1</sup>&frasl;<sub>2</sub></strong>'); // 1/2
-
-      } else if (sliderValue === 9) {
-        $('#sliderValue').html('<sup>9</sup>&frasl;<sub>16</sub>'); // 9/16
-
-      } else if (sliderValue === 10){
-        $('#sliderValue').html('<sup>5</sup>&frasl;<sub>8</sub>'); // 5/8
-
-      } else if (sliderValue === 11){
-        $('#sliderValue').html('<sup>11</sup>&frasl;<sub>16</sub>'); // 11/16
-
-      } else if (sliderValue === 12){
-        $('#sliderValue').html('<strong><sup>3</sup>&frasl;<sub>4</sub></strong>'); // 3/4
-
-      } else if (sliderValue === 13){ 
-        $('#sliderValue').html('<sup>13</sup>&frasl;<sub>16</sub>'); // 13/16
-
-      } else if (sliderValue === 14){ 
-        $('#sliderValue').html('<sup>7</sup>&frasl;<sub>8</sub>'); // 7/8
-
-      } else if (sliderValue === 15){      
-        $('#sliderValue').html('<sup>15</sup>&frasl;<sub>16</sub>'); // 15/16
+      if (sliderValue === 0) {
+        html = '';
+      } else {
+        var html = '<sup>' + fractionPairs[sliderValue][0] + '</sup>&frasl;<sub>' + fractionPairs[sliderValue][1] + '</sub>';
       }
 
-      getSliderValue();     
-  }
+      $('#sliderValue').html(html);
+      getSliderValue(sliderValue);     
+    }
+  }); //end of slider function
 
+  $('#clear').on('click', function(){
+      $('#sliderValue').html('');
+  });
 
-}); //end of slider function
+  //$('#numberMeasurement').on('keyup', function(){
+  //  getSliderValue($(this).val());
+  //});
 
 }); //end of document.ready function
 //========================================================
@@ -87,16 +52,13 @@ var sixthBox = document.getElementsByClassName('sixth');
 var slider = document.getElementsByClassName('slider');
 
 
-function getSliderValue(){
-  var sliderValueGrabbed = $( '#slider' ).slider( "value" );
+function getSliderValue(sliderValueGrabbed){
   var sliderdecimal = inchDecimals(sliderValueGrabbed);
   var wholeNum = getValue(userInputWholeNumber);
   var wholeNumPlusDecimal = wholeNum + sliderdecimal;
 
   divisionMaths(wholeNumPlusDecimal);  
 };
-
-
 
 function divisionMaths(wholeNum){
 
@@ -140,6 +102,7 @@ function divisionMaths(wholeNum){
 
 //making sure result is returned as a number and a string
 function getValue(input){
+  console.log(input.value);
   var result = parseInt(input.value, 10);
   if (isNaN(result) ){
     return 0;
@@ -227,8 +190,12 @@ function returnFractionFromNumber(num){
 }
 
 function inchDecimals(index){
-  var array = [0,  0.0625,   0.125,   0.1875,  0.25,  0.3125,  0.375, 0.4375,   0.5,    0.5625, 0.625,   0.6875,   0.75,   0.8125,    0.875,  0.9375]; // check these numbers!!
-// var array =[0,  1(1/16), 2 (1/8),  3(3.16), 4(1/4),5(5/16), 6(3/8),7(7/16), 8(1/5), 9(9/16), 10(5/8),11(11/16),12(3/4),13(13/16), 14(7/8),15(15/16)]
+  if (index === undefined){
+    return 0;
+  }
+  var array = ["0",  0.0625,   0.125,   0.1875,  0.25,  0.3125,  0.375, 0.4375,   0.5,    0.5625, 0.625,   0.6875,   0.75,   0.8125,    0.875,  0.9375]; // check these numbers!!
+// var array =[0,  1(1/16), 2 (1/8),  3(3/16), 4(1/4),5(5/16), 6(3/8),7(7/16), 8(1/5), 9(9/16), 10(5/8),11(11/16),12(3/4),13(13/16), 14(7/8),15(15/16)]
+
   return array[index];
 };
 
