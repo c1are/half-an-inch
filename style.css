@@ -60,6 +60,10 @@ h1{
 
 
 #measurement{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -75,6 +79,10 @@ h1{
 }
 
 #numberMeasurementContainer{
+	-webkit-box-flex-grow: 1;
+	-moz-box-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
 	flex-grow: 1;
 }
 
@@ -106,6 +114,10 @@ h1{
 }
 
 #slider{
+	-webkit-box-flex-grow: 1;
+	-moz-box-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
 	flex-grow: 1;
 /*	width: 500px;*/
 	margin-left: 20px;
@@ -119,7 +131,11 @@ h1{
 
 
 #sliderValue{
- 	flex-grow: 1;
+	-webkit-box-flex-grow: 1;
+	-moz-box-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
 	font-size: 35px;
 	padding: 20px 0;	
 	border: none;
