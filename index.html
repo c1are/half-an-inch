@@ -26,8 +26,10 @@
 
     <div id="pageWrapper">
 
-    <div id="measurement">          
-        <input id="numberMeasurement" type="tel" onkeyup="getSliderValue()"  placeholder="Your measurement?" maxlength="4">
+    <div id="measurement">
+        <div id="numberMeasurementContainer">          
+          <div contentEditable="true" id="numberMeasurement" type="tel" onkeyup="getSliderValue()"  placeholder="Your measurement?" maxlength="4"></div>
+        </div>
 
         <div id="sliderValue"></div>
         <div id="slider">
@@ -53,6 +55,15 @@
     </div> 
 
       <button id="clear">clear</button>
+
+    <div class="valuesContainer">
+        <div class="third" id="third1">
+            <input class="numberMeasurement" id="numberMeasurement" type="tel" onkeyup="getSliderValue()"  placeholder="Your measurement?" maxlength="4">
+
+        </div>
+        <div class="third" id="third2"></div>
+        <div class="third" id="third3"></div>
+      </div> 
 
       <div class="valuesContainer">
         <div class="half" id="half1"><p>half</p></div>
