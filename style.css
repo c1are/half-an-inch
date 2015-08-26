@@ -130,20 +130,6 @@ h1{
 	width: 12.5%
 }
 
-.valuesContainer{
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	align-items: center;
-	text-align: center;	
-}
-
-.valuesContainer p{
-	color: rgba(255,255,255,0.7);
-}
-
 
 #measure_guide{
 	z-index: 5;	
@@ -220,6 +206,21 @@ input {
   font-size: 80px;
   width: 100%;
 }*/
+
+.valuesContainer{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	text-align: center;	
+	width: 100%;
+}
+
+.valuesContainer p{
+	color: rgba(255,255,255,0.7);
+}
 
 
 
@@ -328,8 +329,11 @@ span {
 }
 
 @media only screen and (max-width: 550px){
-  #third2, #third3 {
+	.third {
     display: none;
+  }
+  .third:first-child {
+  	display: block;
   }
 }
 
