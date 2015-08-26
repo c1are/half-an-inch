@@ -26,13 +26,14 @@
 
     <div id="pageWrapper">
 
-    <div id="measurement">
-        <div id="numberMeasurementContainer">          
-          <div contentEditable="true" id="numberMeasurement" type="tel" onkeyup="getSliderValue()"  placeholder="Your measurement?" maxlength="4"></div>
+    <div id="measurement"> <!-- parent -->
+
+        <div id="numberMeasurementContainer"> <!-- child col-3-8   -->      
+          <input id="numberMeasurement" type="tel" onkeyup="getSliderValue()"  placeholder="Your measurement?" maxlength="4">
         </div>
 
-        <div id="sliderValue"></div>
-        <div id="slider">
+        <div id="sliderValue"></div> <!-- child col-1-8 -->
+        <div id="slider"> <!-- child col-4-8 -->
            <!--  <img id="measure_guide" src="assets/measure_guide.png"/> -->
             <div class="ruler">
               <div class="rulerValue "id="value_0"></div>
@@ -50,20 +51,14 @@
               <div class="rulerValue "id="value_12"></div>
               <div class="rulerValue "id="value_13"></div>
               <div class="rulerValue "id="value_14"></div>
-            </div>
+            </div> 
         </div>  
     </div> 
 
+
       <button id="clear">clear</button>
 
-    <div class="valuesContainer">
-        <div class="third" id="third1">
-            <input class="numberMeasurement" id="numberMeasurement" type="tel" onkeyup="getSliderValue()"  placeholder="Your measurement?" maxlength="4">
-
-        </div>
-        <div class="third" id="third2"></div>
-        <div class="third" id="third3"></div>
-      </div> 
+    
 
       <div class="valuesContainer">
         <div class="half" id="half1"><p>half</p></div>
