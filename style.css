@@ -75,6 +75,7 @@ h1{
 @media only screen and (max-width: 550px){
   #measurement{
     display: block;
+    height: 200px;
   }
 }
 
@@ -82,6 +83,12 @@ h1{
 	width: 37.5%;
 }
 
+/*@media only screen and (max-width: 550px){
+  #numberMeasurementContainer{
+    width: 100%;
+  }
+}
+*/
 #numberMeasurement {
 	font-size: 80px;
 	padding: 10px;
@@ -94,7 +101,7 @@ h1{
 	font-family: Garamond, sans-serif;
 	outline: none;
 	width: 100%;
-	display: block;
+	/*display: inline-block;*/
 	-webkit-appearance: none;
 }
 
@@ -112,6 +119,12 @@ h1{
 	width: 50%;
 }
 
+@media only screen and (max-width: 550px){
+  #slider{
+    width: 100%;
+  }
+}
+
 /*.ui-slider-horizontal .ui-slider-handle {
 	background-color: red;
 	outline: none;
@@ -127,11 +140,11 @@ h1{
 	background-color: white;
 	border: 3px dashed #EACFC4;
 	border-left: none;
-	width: 12.5%
+	width: 12.5%;
 }
 
 
-#measure_guide{
+/*#measure_guide{
 	z-index: 5;	
 	-webkit-box-grow: 1;
 	-moz-box-grow: 1;
@@ -139,7 +152,7 @@ h1{
 	-ms-grow: 1;
 	flex-grow: 1;
 	width: 100%;
-}
+}*/
 
 .ruler {	
 	padding: 0;
