@@ -79,11 +79,6 @@ h1{
 }
 
 #numberMeasurementContainer{
-/*	-webkit-box-flex-grow: 1;
-	-moz-box-flex-grow: 1;
-	-webkit-flex-grow: 1;
-	-ms-flex-grow: 1;
-	flex-grow: 1;*/
 	width: 37.5%;
 }
 
@@ -93,8 +88,6 @@ h1{
 	text-align: right; 
 	border: none;
 	height: 100px;
-	/*min-width: 150px;
-	max-width: 200px;*/
 	vertical-align: middle;
 	color: #4B4B4D;
 	border: 3px dashed #EACFC4;
@@ -107,7 +100,6 @@ h1{
 
 ::-webkit-input-placeholder {
    color: rgba(0,0,0,0.4);
-   /*font-family: sans-serif;	*/
    font-size: 16px;
    font-weight: 200;
    margin: 0;
@@ -115,12 +107,6 @@ h1{
 }
 
 #slider{
-/*	-webkit-box-flex-grow: 1;
-	-moz-box-flex-grow: 1;
-	-webkit-flex-grow: 1;
-	-ms-flex-grow: 1;
-	flex-grow: 1;*/
-/*	width: 500px;*/
 	margin-left: 20px;
 	padding: 0;
 	width: 50%;
@@ -133,17 +119,9 @@ h1{
 
 
 #sliderValue{
-/*	-webkit-box-flex-grow: 1;
-	-moz-box-flex-grow: 1;
-	-webkit-flex-grow: 1;
-	-ms-flex-grow: 1;
-	flex-grow: 1;*/
 	font-size: 35px;
 	padding: 20px 0;	
-	/*border: none;*/
 	height: 100px;	
-	/*min-width: 100px;
-	max-width: 100px;*/
 	vertical-align: middle;
 	color: #4B4B4D;
 	background-color: white;
@@ -156,8 +134,6 @@ h1{
 	display: flex;
 	align-items: center;
 	text-align: center;	
-	/*margin-left: 30px;
-	margin-right: 30px;*/
 }
 
 .valuesContainer p{
@@ -180,6 +156,10 @@ h1{
 .rulerValue{	
 	height: 60px;
 	width: 2px;
+	-webkit-box-grow: 1;
+	-moz-box-grow: 1;
+	-webkit-grow: 1;
+	-ms-grow: 1;
 	flex-grow: 1;
 	border-right: 1px solid rgba(0,0,0,0.3); 
 	margin-top: 14px;
@@ -201,7 +181,7 @@ h1{
 #value_13{height: 40px;}
 #value_14{height: 30px;}
 
-.parent {
+/*.parent {
   display: flex;
   height: 100px;
 }
@@ -227,11 +207,15 @@ h1{
 input {
   font-size: 80px;
   width: 100%;
-}
+}*/
 
 
 
 .half{
+	-webkit-box-grow: 1;
+	-moz-box-grow: 1;
+	-webkit-grow: 1;
+	-ms-grow: 1;
 	flex-grow: 1;
 	background-color: #EBD0BF;
 	height: 60px;
@@ -258,6 +242,10 @@ span {
 }
 
 .quarter{
+	-webkit-box-grow: 1;
+	-moz-box-grow: 1;
+	-webkit-grow: 1;
+	-ms-grow: 1;
 	flex-grow: 1;
 	background-color: #E2ABA4;
 	height: 60px;	
@@ -280,6 +268,10 @@ span {
 
 
 .eigth{
+	-webkit-box-grow: 1;
+	-moz-box-grow: 1;
+	-webkit-grow: 1;
+	-ms-grow: 1;
 	flex-grow: 1;
 	background-color: #E18473;
 	height: 60px;
@@ -304,6 +296,10 @@ span {
 }
 
 .third{
+	-webkit-box-grow: 1;
+	-moz-box-grow: 1;
+	-webkit-grow: 1;
+	-ms-grow: 1;
 	flex-grow: 1;
 	background-color: #B0CCB6;
 	height: 60px;
@@ -326,6 +322,10 @@ span {
 }
 
 .sixth{
+	-webkit-box-grow: 1;
+	-moz-box-grow: 1;
+	-webkit-grow: 1;
+	-ms-grow: 1;
 	flex-grow: 1;
 	background-color: #89BC93;
 	height: 60px;
