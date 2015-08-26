@@ -131,6 +131,10 @@ h1{
 }
 
 .valuesContainer{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	text-align: center;	
@@ -143,6 +147,10 @@ h1{
 
 #measure_guide{
 	z-index: 5;	
+	-webkit-box-grow: 1;
+	-moz-box-grow: 1;
+	-webkit-grow: 1;
+	-ms-grow: 1;
 	flex-grow: 1;
 	width: 100%;
 }
@@ -150,6 +158,10 @@ h1{
 .ruler {	
 	padding: 0;
 	margin: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 }
 
