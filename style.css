@@ -133,6 +133,9 @@ input#numberMeasurement:-ms-input-placeholder {
   #slider{
     width: 100%;
   }
+  _:-ms-input-placeholder, :root #slider{
+  	display: inline-block;
+  }
 }
 
 /*.ui-slider-horizontal .ui-slider-handle {
