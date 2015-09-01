@@ -90,6 +90,9 @@ h1{
   #numberMeasurementContainer{
     width: 75%;
   }
+    _:-ms-input-placeholder, :root #numberMeasurementContainer{
+  	display: inline-block;
+  }
 }
 
 #numberMeasurement {
@@ -133,6 +136,8 @@ input#numberMeasurement:-ms-input-placeholder {
   #slider{
     width: 100%;
   }
+
+/*  IE hack*/
   _:-ms-input-placeholder, :root #slider{
   	display: inline-block;
   }
@@ -160,6 +165,9 @@ input#numberMeasurement:-ms-input-placeholder {
 @media only screen and (max-width: 550px){
   #sliderValue{
     width: 25%;
+  }
+    _:-ms-input-placeholder, :root #sliderValue{
+  	display: inline-block;
   }
 }
 
