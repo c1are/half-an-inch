@@ -135,7 +135,8 @@ input#numberMeasurement:-ms-input-placeholder {
 @media only screen and (max-width: 550px){
   #slider{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-right: 20px;
   }
 
 /*  IE hack*/
@@ -186,6 +187,7 @@ input#numberMeasurement:-ms-input-placeholder {
 .ruler {	
 	padding: 0;
 	margin: 0;
+	margin-top: 25px;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -251,8 +253,17 @@ input {
 
 @media only screen and (max-width: 550px){
   .ui-slider .ui-slider-handle{
-    width: 2em;
-    height: 2em;
+    width: 40px;
+    height: 40px;
+    top: 0px;
+    margin-left: -21px;
+	}
+}
+
+
+@media only screen and (max-width: 550px){
+  .ui-slider-horizontal {
+    height: 40px;
 	}
 }
 
