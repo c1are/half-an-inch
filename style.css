@@ -66,29 +66,32 @@ h1{
 	display: -webkit-flex;
 	display: flex;
 	align-items: center;
-	text-align: center;
+	/*text-align: center;*/
 	margin: 10px 0px;
 	padding: 3px;
-  	height: 100px;
+  	/*height: 100px;*/
 }
 
 @media only screen and (max-width: 550px){
   #measurement{
-    display: block;
+   /* display: block;*/
     height: 200px;
+   -webkit-flex-flow: row wrap;
+  justify-content: space-around;
   }
 }
 
 #numberMeasurementContainer{
 	width: 37.5%;
+	/*flex: 1;*/
 }
 
-/*@media only screen and (max-width: 550px){
+@media only screen and (max-width: 550px){
   #numberMeasurementContainer{
-    width: 100%;
+    width: 75%;
   }
 }
-*/
+
 #numberMeasurement {
 	font-size: 80px;
 	padding: 10px;
@@ -103,6 +106,7 @@ h1{
 	width: 100%;
 	/*display: inline-block;*/
 	-webkit-appearance: none;
+
 }
 
 ::-webkit-input-placeholder {
@@ -117,6 +121,7 @@ h1{
 	margin-left: 20px;
 	padding: 0;
 	width: 50%;
+	/*flex: 1;*/
 }
 
 @media only screen and (max-width: 550px){
@@ -141,6 +146,13 @@ h1{
 	border: 3px dashed #EACFC4;
 	border-left: none;
 	width: 12.5%;
+	/*flex: 1;*/
+}
+
+@media only screen and (max-width: 550px){
+  #sliderValue{
+    width: 25%;
+  }
 }
 
 
