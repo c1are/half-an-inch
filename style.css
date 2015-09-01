@@ -135,6 +135,7 @@ input#numberMeasurement:-ms-input-placeholder {
 @media only screen and (max-width: 550px){
   #slider{
     width: 100%;
+    margin-top: 20px;
   }
 
 /*  IE hack*/
@@ -247,6 +248,14 @@ input {
   font-size: 80px;
   width: 100%;
 }*/
+
+@media only screen and (max-width: 550px){
+  .ui-slider .ui-slider-handle{
+    width: 2em;
+    height: 2em;
+	}
+}
+
 
 .valuesContainer{
 	display: -webkit-box;
